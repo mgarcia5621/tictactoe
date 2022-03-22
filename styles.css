@@ -66,18 +66,9 @@ body {
 
 }
 
-.cell.x {
-    border-top: none;
-}
-
-
-.cell {
-    border-top: none;
-}
-
 .cell.x::before,
-.cell.x::after
-.board.x .cell:hover::before
+.cell.x::after,
+.board.x .cell:hover::before,
 .board.x .cell:hover::after {
     content: '';
     position: absolute;
@@ -119,4 +110,12 @@ body {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size) * .7);
     background-color: black;
+}
+
+.cell.x {
+    border-top: none;
+}
+
+.cell {
+    border-top: none;
 }
