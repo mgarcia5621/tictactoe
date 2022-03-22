@@ -63,13 +63,14 @@ body {
 }
 
 .cell.x::before,
-.cell.x::after {
+.cell.x::after
+.cell.circle::before {
     background-color: black;
 }
 
 .board.x .cell:hover.board.x .cell:not(.x):not(.circle):hover::before,
-.board.x .cell:hover.board.x .cell:not(.x):not(.circle):hover::after
- {
+.board.x .cell:hover.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
     background-color: lightgray;
 }
 
